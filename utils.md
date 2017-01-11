@@ -1,4 +1,4 @@
-Utilisation de codelite
+Utilisation de codelite(IDE utilisé pour la plupart des exercices)
 
 creation d'un nouveau `workspace` selection du type de workspace 
 utilisé (c++/PHP/node.js) on donne un nom et on le met dans le "path"
