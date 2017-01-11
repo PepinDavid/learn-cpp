@@ -1,0 +1,5 @@
+[{
+  "file": "/home/david/Documents/menuSchoolClass/menuClassSchool/main.cpp",
+  "directory": "/home/david/Documents/menuSchoolClass/menuClassSchool",
+  "command": "/usr/bin/g++ -c /home/david/Documents/menuSchoolClass/menuClassSchool/main.cpp -o /home/david/Documents/menuSchoolClass/menuClassSchool/main.cpp.o  -g  -O0  -Wall -I. -I."
+ }]

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1476912786 source:/home/david/dev/c++/menuSchoolClass/main.cpp
+	<iostream>
+	<limits>
+

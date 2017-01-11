@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="praticeClass" Database="praticeClass.tags">
+  <Project Name="practiceClass" Path="practiceClass/practiceClass.project" Active="No"/>
+  <Project Name="OperatorSurchage" Path="OperatorSurchage/OperatorSurchage.project" Active="No"/>
+  <Project Name="FractionClass" Path="FractionClass/FractionClass.project" Active="No"/>
+  <Project Name="practiceClassPointeur" Path="practiceClassPointeur/practiceClassPointeur.project" Active="No"/>
+  <Project Name="praticeClassPolymorphisme" Path="praticeClassPolymorphisme/praticeClassPolymorphisme.project" Active="No"/>
+  <Project Name="praticeHeterogeneCollection" Path="praticeHeterogeneCollection/praticeHeterogeneCollection.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="practiceClass" ConfigName="Debug"/>
+      <Project Name="OperatorSurchage" ConfigName="Debug"/>
+      <Project Name="FractionClass" ConfigName="Debug"/>
+      <Project Name="practiceClassPointeur" ConfigName="Debug"/>
+      <Project Name="praticeClassPolymorphisme" ConfigName="Debug"/>
+      <Project Name="praticeHeterogeneCollection" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="practiceClass" ConfigName="Release"/>
+      <Project Name="OperatorSurchage" ConfigName="Release"/>
+      <Project Name="FractionClass" ConfigName="Release"/>
+      <Project Name="practiceClassPointeur" ConfigName="Release"/>
+      <Project Name="praticeClassPolymorphisme" ConfigName="Release"/>
+      <Project Name="praticeHeterogeneCollection" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

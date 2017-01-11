@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1475444076 source:/home/david/dev/c++/test/main.cpp
+	<iostream>
+	<string>
+	<cmath>
+	"testMath.h"
+
+1475444079 /home/david/dev/c++/test/testMath.h
+

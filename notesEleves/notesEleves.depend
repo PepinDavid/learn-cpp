@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1476341441 source:/home/david/dev/c++/notesEleves/main.cpp
+	<iostream>
+	<limits>
+

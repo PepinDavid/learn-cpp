@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1476046640 source:/home/david/dev/c++/mysteriesWords/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<ctime>
+	<cstdlib>
+	<fstream>
+

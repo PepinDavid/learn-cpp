@@ -1,0 +1,3 @@
+Bonjour, je suis une pharse de test d'écriture .
+ un peu de nombre : 42.3549
+J'ai 28 ans .

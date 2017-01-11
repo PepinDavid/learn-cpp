@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1475614951 source:/home/david/dev/c++/array/fn_array.cpp
+	<iostream>
+	"fn_array.h"
+
+1475614889 /home/david/dev/c++/array/fn_array.h
+
+1475614877 source:/home/david/dev/c++/array/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	"fn_vector.h"
+	"fn_array.h"
+
+1475615224 /home/david/dev/c++/array/fn_vector.h
+	<vector>
+

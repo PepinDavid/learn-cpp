@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="jeuLabyrinthe" Database="jeuLabyrinthe.tags">
+  <Project Name="labyrintheGame" Path="labyrintheGame/labyrintheGame.project" Active="No"/>
+  <Project Name="labyWithClassParent" Path="labyWithClassParent/labyWithClassParent.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="labyrintheGame" ConfigName="Debug"/>
+      <Project Name="labyWithClassParent" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="labyrintheGame" ConfigName="Release"/>
+      <Project Name="labyWithClassParent" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
