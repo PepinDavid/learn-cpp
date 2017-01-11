@@ -1,5 +1,6 @@
 words
 uranus
+laboratoire
 ballotin
 baguette
 poney
