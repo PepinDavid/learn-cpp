@@ -34,8 +34,7 @@ class Tree{
         void insert(int childKey, node *leaf);
         node *search(int key, node *leaf);
         node *isRoot(node *leaf);
-        int height(node *leaf, string r = "root ");
-        int isLeaf(node *leaf);
+        int height(node *leaf);
 };
 
 Tree::Tree(){
@@ -104,7 +103,6 @@ node * Tree::search(int key){
     return search(key, r);
 }
 node * Tree::search(int key, node *leaf){
-    cerr << "key search " << key << " leaf id " << leaf->id << " leaf ptr " << leaf << endl;
     if(leaf == NULL)
         return NULL;
     if(leaf->id == key)
@@ -130,27 +128,18 @@ node * Tree::isRoot(node *leaf){
 }
 int Tree::height(){
     node * r = isRoot(root);
-    string s = "racine ";
-    return height(r, s);
+    return height(r);
 }
-int Tree::height(node *leaf, string r){
-    r += to_string(leaf->id);
-    cerr << r << endl;
-    r += " --| ";
+int Tree::height(node *leaf){
     if(leaf->nbChildren < 1){
         return 1;
     }else{
         int maxDepth = 0;
-        for(int i = 0; i < leaf->nbChildren; i++){
+        for(int i = 0; i < leaf->nbChildren; i++){            
             maxDepth = max(maxDepth, height(leaf->children[i]));
         }
         return maxDepth+1;
     }
-}
-int Tree::isLeaf(node * leaf){
-    if(leaf->nbChildren < 1)
-        return 0;
-    return 1;
 }
 int main()
 {
