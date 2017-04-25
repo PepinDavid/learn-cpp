@@ -1,32 +1,10 @@
 #include <QApplication>
 #include <QFont>
 #include <QGridLayout>
-#include <QLCDNumber>
 #include <QPushButton>
-#include <QSlider>
-#include <QVBoxLayout>
 #include <QWidget>
-
-class LCDRange : public QWidget{
-    public:
-        LCDRange(QWidget * parent = 0);
-        ~LCDRange();
-};
-LCDRange::LCDRange(QWidget *parent){
-    QLCDNumber *lcd = new QLCDNumber(2);
-    lcd->setSegmentStyle(QLCDNumber::Filled);
-
-    QSlider *slider = new QSlider(Qt::Horizontal);
-    slider->setRange(0,99);
-    slider->setValue(0);
-    connect(slider, SIGNAL(valueChanged(int)), lcd, SLOT(display(int)));
-
-    QVBoxLayout * layout = new QVBoxLayout;
-    layout->addWidget(lcd);
-    layout->addWidget(slider);
-    setLayout(layout);
-}
-LCDRange::~LCDRange(){}
+#include <QDebug>
+#include "lcdrange.h"
 
 class MyWidget : public QWidget{
     public:
@@ -34,6 +12,7 @@ class MyWidget : public QWidget{
         ~MyWidget();
 
 };
+
 MyWidget::MyWidget(QWidget *parent) : QWidget(parent){
     QPushButton * quit = new QPushButton(tr("Quit"));
 
@@ -41,10 +20,22 @@ MyWidget::MyWidget(QWidget *parent) : QWidget(parent){
     connect(quit, SIGNAL(clicked()), qApp, SLOT(quit()));
 
     QGridLayout * grid = new QGridLayout;
+    LCDRange *previousRange = 0;
+
     for(int row = 0; row < 3; ++row){
         for(int columns = 0; columns < 3; ++columns){
             LCDRange * lcdRange = new LCDRange;
+            qDebug() << "previous : " << previousRange;
+            qDebug() << "lcd : " <<lcdRange;
             grid->addWidget(lcdRange, row, columns);
+            //le fait que l'on connect le lcdrange avec son precedent
+            //provoque le changement du precedent et ainsi que de suite
+            if(previousRange)
+                connect(lcdRange, SIGNAL(valueChanged(int)),
+                       previousRange, SLOT(setValue(int)));
+
+            previousRange = lcdRange;
+            qDebug() << "cpy lcd in previous : " << previousRange;
         }
     }
     QVBoxLayout * layout = new QVBoxLayout;
@@ -54,9 +45,10 @@ MyWidget::MyWidget(QWidget *parent) : QWidget(parent){
 }
 MyWidget::~MyWidget(){}
 
-int main (int argc, char ** argv){
+int main(int argc, char *argv[])
+{
     QApplication app(argc, argv);
-    MyWidget myWidget;
-    myWidget.show();
+    MyWidget widget;
+    widget.show();
     return app.exec();
 }
