@@ -29,7 +29,7 @@ string mixWord(string s)
 void playWithoutFile(string wordClear = "")
 {
     string wordMystery, wordResp("");
-    int cpt(0);
+    int cpt(0), gameover(5);
     srand(time(0));
     if(wordClear.size() < 1)
     {
@@ -47,14 +47,19 @@ void playWithoutFile(string wordClear = "")
 
         if(wordClear != wordResp)
         {
-            cout << "Ce n'est pas le bon mot !" << endl;
+            cout << "Ce n'est pas le bon mot ! " << endl;
+            gameover--;
+            cout << "Reste " << gameover << "coups" << endl;
         }
 
-    }while(wordClear != wordResp);
+    }while(wordClear != wordResp && gameover > 0);
 
-    cout << "Bravo c'est gagné !!! Vous avez fait ça en : " << cpt << " coups " << endl;
+    if(gameover > 0){
+        cout << "Bravo c'est gagné !!! Vous avez fait ça en : " << cpt << " coups " << endl;
+    }else{
+        cout << "Désole c'est game over! Le mot mystères est : " << wordClear << endl;
+    }
 }
-
 
 string getWordFile(string s)
 {
@@ -80,11 +85,12 @@ string getWordFile(string s)
     }
 }
 
+
 //jeu version code avec prise d'un mot dans une liste de mots dans un fichier.
 void playWithFile()
 {
     srand(time(0));
-    string word, path("/home/david/dev/c++/mysteriesWords/words.txt");
+    string word, path("/home/david/dev/learn-cpp/mysteriesWords/words.txt");
 
     word = getWordFile(path);
 
@@ -95,7 +101,7 @@ int main()
 {
     bool again(true);
     string replay("");
-    int play(1);
+    int play(2);
     while(again){
         cout << "Bienvenue sur le jeu mystère ! " << endl;
         //playWithoutFile();
@@ -110,10 +116,6 @@ int main()
         {
             play = 0;
         }
-        else
-        {
-            play = 2;
-        }
         switch(play)
         {
             case 1:
@@ -121,8 +123,9 @@ int main()
             case 0:
                 again = false;
                 break;
-            default:
+            case 2:
                 cout << "Veuillez répondre pour yes ou no" << endl;
+                break;
         }
     }
     return 0;
