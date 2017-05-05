@@ -1,68 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="/home/david/dev/c++/jeuLabyrinthe/jeuLabyrinthe.workspace">
-  <int Value="4" Name="m_selectedTab"/>
-  <wxString Value="/home/david/dev/c++/jeuLabyrinthe/jeuLabyrinthe.workspace" Name="m_workspaceName"/>
+<Session Name="/home/david/perso/learn-cpp/jeuLabyrinthe/jeuLabyrinthe.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="/home/david/perso/learn-cpp/jeuLabyrinthe/jeuLabyrinthe.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/main.cpp" Name="FileName"/>
+      <wxString Value="/home/david/perso/learn-cpp/jeuLabyrinthe/labyWithClassParent/mainTestPointer.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="14" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/Perso.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="29" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/Perso.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="9" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/Player.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="10" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/Player.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="6" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/MonsterGreen.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="15" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/MonsterGreen.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="13" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/Monster.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="9" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/Monster.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="8" Name="CurrentLine"/>
+      <int Value="7" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
