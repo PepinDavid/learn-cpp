@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=mysterieswords
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/david/perso/c++/motsmisteres"
-ProjectPath            := "/home/david/perso/c++/motsmisteres/mysterieswords"
+WorkspacePath          := "/home/david/perso/learn-cpp/motsmisteres"
+ProjectPath            := "/home/david/perso/learn-cpp/motsmisteres/mysterieswords"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=David
-Date                   :=11/01/17
+Date                   :=04/05/17
 CodeLitePath           :="/home/david/.codelite"
 LinkerName             :=g++
 SharedObjectLinkerName :=g++ -shared -fPIC
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/david/perso/c++/motsmisteres/mysterieswords/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/david/perso/learn-cpp/motsmisteres/mysterieswords/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
