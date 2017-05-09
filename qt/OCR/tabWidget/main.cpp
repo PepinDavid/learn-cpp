@@ -5,6 +5,7 @@
 #include <QTranslator>
 #include <QLocale>
 #include <QLibraryInfo>
+#include <QDebug>
 
 #include "info.h"
 #include "progression.h"
@@ -16,10 +17,15 @@ int main(int argc, char ** argv){
     QGridLayout *grid = new QGridLayout;
     QTabWidget *tab = new QTabWidget(window);
     QWidget *widget = new Info();
+    QWidget *widgetProg = new Progression();
     tab->addTab(widget, "Information");
-    widget = new Progression();
-    tab->addTab(widget, "Progression");
+    tab->addTab(widgetProg, "Progression");
+    qDebug() << "info ptr : " << widget;
+    qDebug() << "info ptr : " << widgetProg;
 
+//    QObjectList list = tab->children();
+//    for(int i = 0; i < 2; ++i)
+//        qDebug() << &list[i];
     //for traduction
     QString locale = QLocale::system().name().section('_', 0, 0);
     QTranslator translator;
