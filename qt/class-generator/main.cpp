@@ -3,12 +3,12 @@
 #include <QLibraryInfo>
 #include <QDebug>
 
-#include "princicaplwindow.h"
+#include "principalwindow.h"
 
 int main (int argc, char **argv){
     QApplication app(argc, argv);
 
-    PrincicaplWindow winPrincipal;
+    PrincipalWindow winPrincipal;
 
     winPrincipal.show();
     return app.exec();

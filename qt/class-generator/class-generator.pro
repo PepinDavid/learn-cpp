@@ -4,7 +4,9 @@ TEMPLATE += app
 
 SOURCES += \
     main.cpp \
-    princicaplwindow.cpp
+    windial.cpp \
+    principalwindow.cpp
 
 HEADERS += \
-    princicaplwindow.h
+    windial.h \
+    principalwindow.h
