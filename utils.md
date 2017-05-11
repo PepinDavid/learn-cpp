@@ -17,3 +17,6 @@ project settings)
 une fenetre s'ouvre, on clique sur linker et dans libraries search path
 on ajout le chemin ou est la bibliotheque.(/usr/include/GL)
 et dans libraries on ajoute les elements voulues. (ex: GL;glut )
+Pour compiler avec c++11 ou c++14 dans la même fenetre, clique 
+sur compiler pour dans options c++ compiler options cocher le standard
+voulu
