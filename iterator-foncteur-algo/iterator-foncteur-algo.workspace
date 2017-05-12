@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="iterator-foncteur-algo" Database="">
+  <Project Name="iterator-foncteur" Path="iterator-foncteur/iterator-foncteur.project" Active="No"/>
+  <Project Name="alogorithm" Path="alogorithm/alogorithm.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="iterator-foncteur" ConfigName="Debug"/>
+      <Project Name="alogorithm" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="iterator-foncteur" ConfigName="Release"/>
+      <Project Name="alogorithm" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
