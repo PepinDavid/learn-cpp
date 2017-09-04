@@ -7,7 +7,7 @@
 #include "Player.h"
 #include "MonsterGreen.h"
 
-using namespace std; 
+using namespace std;
 
 int nbColumns(0), nbLines(0);
 int endX(0), endY(0);
@@ -24,7 +24,7 @@ void freeMemories();
 void gameOver();
 
 int main(int argc, char **argv)
-{	
+{
     matrice = NULL;
 
     //init glut
@@ -38,17 +38,17 @@ int main(int argc, char **argv)
     glutPostRedisplay();
     glutReshapeFunc(labyRedim);
     glutSpecialFunc(labySpecialKeyboard);
-    openFile("/home/david/dev/c++/jeuLabyrinthe/labyWithClassParent/levelone");
-    cout << "position MR Green : "; 
+    openFile("/home/david/dev/learn-cpp/jeuLabyrinthe/labyWithClassParent/levelone");
+    cout << "position MR Green : ";
     cout << mGreen.getPosX() << endl;
     cout << mGreen.getPosY() << endl;
-    cout << "position firstPlayer : "; 
+    cout << "position firstPlayer : ";
     cout << firstPlayer.getPosX() << endl;
     cout << firstPlayer.getPosY() << endl;
     firstPlayer.getName();
-    
+
     glutMainLoop();
-    
+
 	return 0;
 }
 
@@ -58,7 +58,7 @@ void labyAffichage()
     glClearColor(1.0, 1.0, 1.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
-    
+
     //instruction d'affichage
     drawLevel();
     mGreen.draw();
@@ -68,7 +68,7 @@ void labyAffichage()
 
 void labyRedim(int x, int y)
 {
-    
+
     glViewport(0, 0, x, y);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
@@ -99,7 +99,7 @@ void openFile(char * nom_file)
 {
     ifstream file;
     file.open(nom_file);
-    
+
     if(file.good() == false)
     {
         cout << "Une erreur est survenu lors de l'ouverture du fichier : " << nom_file << endl;
@@ -107,17 +107,17 @@ void openFile(char * nom_file)
     }
     file >> nbColumns;
     file >> nbLines;
-    
+
     //initialisation longueur de la matrice
     matrice = new char * [nbColumns];
     for(int i = 0; i < nbColumns; i++)
         matrice[i] = new char [nbLines];
-        
+
     //initialisation de chaque elements des tableaux a "0"
     for(int i = 0; i < nbColumns; i++)
         for(int j = 0; j < nbLines; j++)
             matrice[i][j] = '0';
-            
+
     for(int j = 0; j < nbLines; j++)
         for(int i = 0; i < nbColumns; i++)
         {
@@ -136,7 +136,7 @@ void openFile(char * nom_file)
                     break;
             }
         }
-    
+
     file.close();
 }
 
@@ -144,7 +144,7 @@ void drawLevel()
 {
     glColor3d(0.5, 0.5, 0.5);
     glBegin(GL_QUADS);//commence l'affichage du quatrillage
-    
+
     for(int i = 0; i < nbColumns; i++)
             for(int j = 0; j < nbLines; j++)
                 if(matrice[i][j] == '0')
@@ -154,9 +154,9 @@ void drawLevel()
                     glVertex2d(i+1, j+1);
                     glVertex2d(i+1, j);
                 }
-                
+
     glEnd();
-    
+
     //affichage point de sorti
     glPushMatrix();
     glTranslated(endX + 0.5, endY + 0.5, 0.0);
@@ -182,7 +182,7 @@ void freeMemories()
 
 void gameOver()
 {
-    if(firstPlayer.getPosX() == endX && 
+    if(firstPlayer.getPosX() == endX &&
         firstPlayer.getPosY() == endY)
         {
             cout << "Bravo !!! vous etes sorti du labyrinthe" << endl;

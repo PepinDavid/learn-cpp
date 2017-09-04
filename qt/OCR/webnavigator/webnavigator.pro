@@ -1,5 +1,8 @@
 TEMPLATE = app
-QT += widgets webkitwidgets
+QT += \
+    widgets \
+    webkit \
+    webkitwidgets
 TARGET =
 DEPENDPATH += .
 INCLUDEPATH += .

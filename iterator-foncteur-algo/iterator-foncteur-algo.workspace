@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="iterator-foncteur-algo" Database="">
+<CodeLite_Workspace Name="iterator-foncteur-algo" Database="" Version="10.0.0">
   <Project Name="iterator-foncteur" Path="iterator-foncteur/iterator-foncteur.project" Active="No"/>
   <Project Name="alogorithm" Path="alogorithm/alogorithm.project" Active="Yes"/>
   <BuildMatrix>
