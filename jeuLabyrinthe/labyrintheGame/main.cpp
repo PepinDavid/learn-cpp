@@ -33,7 +33,7 @@ int main(int argc, char **argv)
     glutDisplayFunc(labyAffichage);
     glutReshapeFunc(labyRedim);
     glutSpecialFunc(labySpecialKeyboard);
-    openFile("/home/david/dev/c++/jeuLabyrinthe/labyrintheGame/levelone");
+    openFile("/home/david/dev/learn-cpp/jeuLabyrinthe/labyrintheGame/levelone");
     
     glutMainLoop();
     

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="graph" Database="" Version="10.0.0">
+  <Project Name="astart" Path="astart/astart.project" Active="Yes"/>
+  <Project Name="blockchain" Path="../../blockchain/blockchain.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="astart" ConfigName="Debug"/>
+      <Project Name="blockchain" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="astart" ConfigName="Release"/>
+      <Project Name="blockchain" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
